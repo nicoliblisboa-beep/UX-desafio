@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplos de Tabelas</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f7fb;
+        color: #233142;
+        margin: 0;
+        padding: 24px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 24px;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #fff;
+        margin-bottom: 24px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      }
+
+      th,
+      td {
+        border: 1px solid #cbd5e1;
+        padding: 10px 12px;
+        text-align: center;
+      }
+
+      th {
+        background: #2563eb;
+        color: white;
+      }
+
+      caption {
+        font-weight: bold;
+        margin-bottom: 8px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Exemplos de Tabelas </h1>
+
+      <table>
+        <caption>Tabela simples</caption>
+        <thead>
+          <tr>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Valor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Notebook</td>
+            <td>2</td>
+            <td>R$ 4.000</td>
+          </tr>
+          <tr>
+            <td>Mouse</td>
+            <td>5</td>
+            <td>R$ 150</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table>
+        <caption>Tabela com colspan</caption>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th colspan="2">Contato</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ana</td>
+            <td>ana@email.com</td>
+            <td>(11) 99999-0000</td>
+          </tr>
+          <tr>
+            <td>Bruno</td>
+            <td colspan="2">bruno@email.com</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table>
+        <caption>Tabela com rowspan</caption>
+        <thead>
+          <tr>
+            <th>Departamento</th>
+            <th>Funcionário</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">TI</td>
+            <td>Carla</td>
+          </tr>
+          <tr>
+            <td>Diego</td>
+          </tr>
+          <tr>
+            <td rowspan="2">Financeiro</td>
+            <td>Elisa</td>
+          </tr>
+          <tr>
+            <td>Fabio</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
